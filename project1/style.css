@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  background-color: black;
+  color: whitesmoke;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 20px;
+  margin-left: 10px;
+  background-color: whitesmoke;
+  color: black;
+  border: none;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  margin-top: 40px;
+}
+
+div.number {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-size: 70px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+.left {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left input {
+  max-width: 100px;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  border-color: whitesmoke;
+  background-color: transparent;
+  color: white;
+  font-family: "Pixelify Sans";
+}
