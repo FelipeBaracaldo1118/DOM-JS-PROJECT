@@ -11,6 +11,8 @@
 //defining the secret number once the app starts
 let number = Math.trunc(Math.random() * 20);
 let score = 20;
+let highScore = 0;
+
 /// adding eventlisteners
 //we create the eventlistener, first variable that passes is the one for the action and the second one is the function to execute according to it
 document.querySelector(".check").addEventListener("click", function () {
@@ -25,6 +27,10 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".score").textContent = score;
     document.querySelector("body").style.backgroundColor = "#2bc520";
     document.querySelector(".number").style.fontSize = "90px";
+    if (score > highScore) {
+      highScore = score;
+      document.querySelector(".highscore").textContent = score;
+    }
   } else if (guess > number) {
     if (score > 0) {
       document.querySelector(".message").textContent = "😭 Too high!";
