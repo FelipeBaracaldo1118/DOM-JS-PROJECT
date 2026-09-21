@@ -55,12 +55,28 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 70%;
+
   background-color: whitesmoke;
   padding: 6rem;
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
+}
+
+.close-modal {
+  border: none;
+  padding: 20px;
+  font-size: 40px;
+  background-color: transparent;
+  position: absolute;
+  top: -10%;
+  left: 93%;
+  cursor: pointer;
+}
+.modal h1 {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 10%;
 }
 
 .overlay {
